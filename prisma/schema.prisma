@@ -12,3 +12,25 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model Account {
+    id       String      @id @default(cuid())
+    type     AccountRole @default(PARTNER)
+    email    String      @unique
+    password String
+
+    partner   Partner? @relation(fields: [partnerId], references: [id])
+    partnerId String?  @unique
+
+    isHidden Boolean @default(false)
+    isActive Boolean @default(true)
+
+    lastLoginAt DateTime?
+
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+    deletedAt DateTime?
+
+    @@map("accounts")
+}
