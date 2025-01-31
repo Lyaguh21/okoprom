@@ -1,0 +1,30 @@
+name: okoprom
+services:
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8080:80"
+    volumes:
+      - /data/pgadmin:/root/.pgadmin
+    env_file:
+      - docker.env
+  # shopaholic-app:
+  #   platform: linux/amd64
+  #   image: shopaholic_app
+  #   container_name: shopaholic-app
+  #   build: ../
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - pgdb
+  pgdb:
+    image: postgres:15.1
+    ports:
+      - 5432:5432
+    volumes:
+      - /data/postgres:/data/postgres
+    env_file:
+      - docker.env
+volumes:
+  pg-data:
+  pg-admin:
