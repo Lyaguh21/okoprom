@@ -19,7 +19,6 @@ model Account {
     email    String      @unique
     password String
 
-    partnerId String?  @unique
 
     isHidden Boolean @default(false)
     isActive Boolean @default(true)
