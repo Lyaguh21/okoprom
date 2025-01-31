@@ -6,7 +6,7 @@ export default function Header() {
           <img src="src\assets\img\Logo.svg" alt="logo" />
         </div>
         <div className="basis-3/6 justify-end text-textGray pl-3 flex md:pl-0 md:justify-evenly md:basis-4/6 xl:basis-4/6">
-          <div className="flex-wrap  flex w-[180px] lg:w-full lg:max-w-[346px] lg:flex-nowrap lg:justify-between xl:justify-evenly xl:max-w-[444px]">
+          <div className="flex-wrap  flex w-[180px] lg:w-full lg:max-w-[346px] lg:flex-nowrap lg:justify-between xl:justify-evenly xl:max-w-[460px]">
             <a href="" className="">
               okoprom@gmail.com
             </a>
