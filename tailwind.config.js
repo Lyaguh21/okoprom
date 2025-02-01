@@ -9,6 +9,7 @@ export default {
       buttonActive: "#3a3b3a",
       textGray: "#757575",
       textBlack: "#161616",
+      borderWhite: "#E9E9E9",
     },
     fontFamily: {
       Golos: "Golos Text",

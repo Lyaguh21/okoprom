@@ -5,7 +5,7 @@ import BlackButton from "../Buttons/BlackButton";
 export default function Header() {
   return (
     <header className=" w-full font-Golos ">
-      <div className="bg-secondColor px-[16px] py-[12px] md:px-[72px] lg:py-3 lg:px-10 flex justify-between">
+      <div className="bg-secondColor px-[16px] py-[12px] md:px-[72px] lg:py-3 lg:px-10 flex justify-between whiteLink">
         <div className="basis-3/6 md:basis-2/6 xl:basis-3/6  flex items-center min-w-[119px]">
           <img src="src\assets\img\Logo.svg" alt="logo" />
         </div>
