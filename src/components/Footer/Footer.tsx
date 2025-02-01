@@ -4,14 +4,14 @@ import NavButton from "../Buttons/NavButton";
 export default function Footer() {
   return (
     <footer className="w-full bg-secondColor font-Golos">
-      <div className="px-10 ">
+      <div className=" px-3 bigPhone:px-10 ">
         <div className="py-5 border-b-[1px] border-borderWhite">
           <img src="src\assets\img\Logo.svg" alt="" />
         </div>
       </div>
 
-      <div className="px-10 py-5 bg-secondColor flex ">
-        <div className="basis-1/2">
+      <div className="px-3 bigPhone:px-10 py-5 bg-secondColor flex flex-wrap md:flex-nowrap">
+        <div className="basis-full md:basis-1/2">
           <h3 className="font-semibold mb-3 text-[24px]">
             Тураевское шоссе дом 17, д.
             <br />
@@ -39,8 +39,8 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="basis-1/2 flex justify-evenly flex-nowrap tiles">
-          <div className=" basic-1/2  flex flex-col  text-textBlack justify-between max-h-[300px]  ">
+        <div className="basis-1/2 flex-wrap sm:flex-nowrap  md:justify-center flex lg:justify-evenly md:flex-wrap lg:flex-nowrap tiles">
+          <div className="mt-[30px] md:mt-0 basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:max-h-[300px]  ">
             <h3 className="text-[20px] mb-4 font-medium">Наша продукция</h3>
             <a href="" className="">
               Станки для разделки кабеля
@@ -49,7 +49,8 @@ export default function Footer() {
               Сепараторы
             </a>
             <a href="" className="">
-              Станок для разделки теплообменников
+              Станок для разделки <br />
+              теплообменников
             </a>
             <a href="" className="">
               Разделка радиаторов
@@ -62,7 +63,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className=" basic-1/2  flex flex-col  text-textBlack justify-between max-h-[300px] ">
+          <div className=" basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:mt-0 lg:max-h-[300px] mt-[30px] ">
             <h3 className="text-[20px] mb-4 font-medium">Информация</h3>
             <a href="" className="">
               Доставка и оплата
@@ -86,7 +87,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="px-10 text-textGray whiteLink">
+      <div className="px-3 bigPhone:px-10 text-textGray whiteLink">
         <div className="py-5 border-t-[1px] border-borderWhite flex justify-between">
           <h3>Интернет магазин "Окопром" © 2025 Все права защищены</h3>
           <a href="#">Политика конфиденциальности</a>
