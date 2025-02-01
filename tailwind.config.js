@@ -6,6 +6,7 @@ export default {
     colors: {
       secondColor: "#F4F5F8",
       textGray: "#757575",
+      textBlack: "#161616",
     },
     fontFamily: {
       Golos: "Golos Text",

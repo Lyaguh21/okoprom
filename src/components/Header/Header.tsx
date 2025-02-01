@@ -1,7 +1,11 @@
+import MainButton from "../Buttons/MainButton";
+import NavButton from "../Buttons/NavButton";
+import BlackButton from "../Buttons/BlackButton";
+
 export default function Header() {
   return (
     <header className=" w-full font-Golos ">
-      <div className="bg-secondColor px-[16px] py-[12px] lg:py-[12px] lg:px-[40px] flex justify-between">
+      <div className="bg-secondColor px-[16px] py-[12px] lg:py-3 lg:px-10 flex justify-between">
         <div className="basis-3/6 md:basis-2/6 xl:basis-3/6  flex items-center">
           <img src="src\assets\img\Logo.svg" alt="logo" />
         </div>
@@ -22,7 +26,28 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div>BOT</div>
+
+      <nav className="flex justify-between px-10 py-5">
+        <div>
+          <MainButton>Главная</MainButton>
+          <MainButton>Каталог</MainButton>
+          <MainButton>О компании</MainButton>
+          <MainButton>Контакты</MainButton>
+        </div>
+        <div className="flex justify-evenly basis-1/3">
+          <div>
+            <NavButton>
+              <img src="src\assets\img\Search.svg" alt="" />
+            </NavButton>
+            <NavButton>
+              <img src="src\assets\img\Cart.svg" alt="" />
+            </NavButton>
+          </div>
+          <div className="">
+            <BlackButton>Запросить консультацию</BlackButton>
+          </div>
+        </div>
+      </nav>
     </header>
   );
 }
