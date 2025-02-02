@@ -16,7 +16,7 @@ datasource db {
 
 model Account {
     id       String      @id @default(cuid())
-    email    String      @unique
+    mail    String      @unique
     password String
 
 

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full bg-secondColor font-Golos">
       <div className=" px-3 bigPhone:px-10 ">
         <div className="py-5 border-b-[1px] border-borderWhite">
-          <img src="src\assets\img\Logo.svg" alt="" />
+          <img src="image/Logo.svg" alt="" />
         </div>
       </div>
 
@@ -28,10 +28,10 @@ export default function Footer() {
           <div className="mt-20 flex">
             <div>
               <NavButton>
-                <img src="src\assets\img\Instagram.svg" alt="" />
+                <img src="image/Instagram.svg" alt="" />
               </NavButton>
               <NavButton>
-                <img src="src\assets\img\YouTube.svg" alt="" />
+                <img src="image/YouTube.svg" alt="" />
               </NavButton>
             </div>
             <p className="text-textGray text-[16px] ml-[10px]">

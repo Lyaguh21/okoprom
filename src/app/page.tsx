@@ -1,5 +1,8 @@
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+"use client";
+
+import Header from "@/app/components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>

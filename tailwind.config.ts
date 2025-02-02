@@ -1,6 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {},
     colors: {
@@ -9,7 +14,6 @@ export default {
       buttonActive: "#3a3b3a",
       textGray: "#757575",
       textBlack: "#161616",
-      borderWhite: "#E9E9E9",
     },
     fontFamily: {
       Golos: "Golos Text",
@@ -24,4 +28,4 @@ export default {
     },
   },
   plugins: [],
-};
+} satisfies Config;
