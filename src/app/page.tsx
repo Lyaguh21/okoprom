@@ -3,12 +3,14 @@
 import Header from "@/app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import FeedbackForm from "./components/FeedbackForm/FeedbackForm";
+import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="h-[500px]"></div>
+      <AboutUsSection />
+
       <FeedbackForm />
       <Footer />
     </>

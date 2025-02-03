@@ -21,3 +21,13 @@
   border-bottom: 2px solid white;
   outline: none;
 }
+
+.childrenAbout {
+  min-width: 187px;
+  height: 187px;
+  border-radius: 16px;
+  background-color: #f4f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
