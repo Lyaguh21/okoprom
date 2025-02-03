@@ -21,7 +21,7 @@ export default function Footer() {
           </h3>
           <h3 className="font-semibold text-[24px]">+7 (800) 707-31-01</h3>
           <h3 className="font-semibold mb-4 text-[24px]">okoprom@gmail.com</h3>
-          <div>
+          <div className="flex justify-between w-[250px]">
             <BlackButton>Whatsapp</BlackButton>
             <BlackButton>Telegram</BlackButton>
           </div>
