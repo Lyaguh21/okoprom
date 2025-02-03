@@ -1,12 +1,12 @@
 export default function AboutUsSection() {
   return (
-    <div className="w-full px-4 bigPhone:px-[40px] font-Golos">
+    <div className="w-full px-4 md:px-[72px] lg:px-[40px] font-Golos">
       <div className="flex flex-wrap xl:flex-nowrap">
-        <div className="xl:basis-2/3 p-[40px] rounded-2xl bg-secondColor flex flex-col justify-between">
+        <div className="basis-full xl:basis-2/3 p-[40px] rounded-2xl bg-secondColor flex flex-col justify-between">
           <h1 className="text-textBlack text-[40px] font-normal ">
             Почему именно мы?
           </h1>
-          <h4 className="text-textGray font-normal text-base">
+          <h4 className="text-textGray font-normal text-base max-w-[550px] mt-[40px]">
             За долгое время работы в этой области у нас более одной тысячи
             клиентов в базе в том числе и представленные выше.
             В основном это компании по переработке вторсырья.

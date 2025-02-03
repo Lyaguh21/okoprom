@@ -7,7 +7,7 @@ export default function FeedbackForm() {
   const [email, setEmail] = useState<string>("");
 
   return (
-    <div className="px-4 md:px-[40px] py-[120px] font-Golos">
+    <div className="md:px-[72] px-4  lg:px-[40px] py-[120px] font-Golos">
       <div className="bg-textBlack rounded-[20px] flex px-[12px] sm:px-11 py-[60px] flex-wrap md:flex-nowrap">
         <div className="md:basis-1/2">
           <div className="max-w-[451px]">
