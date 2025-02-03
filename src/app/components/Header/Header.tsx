@@ -14,12 +14,8 @@ export default function Header() {
         </div>
         <div className="basis-3/6 justify-end text-textGray  flex md:pl-0 md:justify-evenly md:basis-4/6 xl:basis-4/6">
           <div className="flex-wrap justify-center bigPhone:justify-normal flex w-[180px] lg:w-full lg:max-w-[346px] lg:flex-nowrap lg:justify-between xl:justify-evenly xl:max-w-[460px]">
-            <a href="" className="">
-              okoprom@gmail.com
-            </a>
-            <a href="" className="">
-              +7 (800) 707-31-01
-            </a>
+            <p>okoprom@gmail.com</p>
+            <p>+7 (800) 707-31-01</p>
           </div>
           <div className="hidden w-[180px] md:block md:flex md:flex-wrap  lg:w-full lg:justify-evenly max-w-[360px]">
             <a href="" className=" ">
@@ -56,10 +52,10 @@ export default function Header() {
               </svg>
             </NavButton>
             <NavButton>
-              <img src="/image/Search.svg" alt="" />
+              <img src="/image/header/Search.svg" alt="" />
             </NavButton>
             <NavButton>
-              <img src="/image/Cart.svg" alt="" />
+              <img src="/image/header/Cart.svg" alt="" />
             </NavButton>
           </div>
           <div className="hidden md:block mr-0">

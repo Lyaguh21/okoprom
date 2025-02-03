@@ -28,10 +28,10 @@ export default function Footer() {
           <div className="mt-20 flex">
             <div>
               <NavButton>
-                <img src="image/Instagram.svg" alt="" />
+                <img src="image/footer/Instagram.svg" alt="" />
               </NavButton>
               <NavButton>
-                <img src="image/YouTube.svg" alt="" />
+                <img src="image/footer/YouTube.svg" alt="" />
               </NavButton>
             </div>
             <p className="text-textGray text-[16px] ml-[10px]">

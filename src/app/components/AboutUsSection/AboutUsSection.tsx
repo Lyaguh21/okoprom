@@ -19,22 +19,22 @@ export default function AboutUsSection() {
         </div>
         <div className=" justify-between mt-4 w-full xl:basis-1/3 xl:min-w-[610px] flex flex-wrap gap-4 xl:pl-4 xl:mt-0 ">
           <div className="childrenAbout w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\IIF-RF.svg" alt="" />
+            <img src="\image\aboutUsSection\IIF-RF.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\logo-mkm.svg" alt="" />
+            <img src="\image\aboutUsSection\logo-mkm.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)] ">
-            <img src="\image\ollimp.svg" alt="" />
+            <img src="\image\aboutUsSection\ollimp.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)] ">
-            <img src="\image\VtorTehMix.svg" alt="" />
+            <img src="\image\aboutUsSection\VtorTehMix.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\UMZ.svg" alt="" />
+            <img src="\image\aboutUsSection\UMZ.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\VtorCherMet.svg" alt="" />
+            <img src="\image\aboutUsSection\VtorCherMet.svg" alt="" />
           </div>
         </div>
       </div>

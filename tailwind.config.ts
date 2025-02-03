@@ -12,9 +12,13 @@ export default {
       secondColor: "#F4F5F8",
       buttonHover: "#cdced1",
       buttonActive: "#3a3b3a",
+
       textGray: "#757575",
+      textLightGray: "#9F9F9F",
       textBlack: "#161616",
+
       borderWhite: "#E9E9E9",
+      borderBlack: "#36383C",
     },
     fontFamily: {
       Golos: "Golos Text",
