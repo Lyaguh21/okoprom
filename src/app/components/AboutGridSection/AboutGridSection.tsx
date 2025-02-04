@@ -2,12 +2,11 @@ import СhildGrid from "./СhildGrid";
 
 export default function AboutGridSection() {
   return (
-    <div className="mx-4 md:mx-[72px] lg:mx-[40px] font-Golos flex flex-col">
-      <div>
-        <h1 className="max-w-[852px] text-[40px] font-normal leading-[48px] text-textBlack">
-          Ваш рост – наш интерес, ведь тогда нам будет к чему стремиться
-        </h1>
-      </div>
+    <div className="mx-4 md:mx-[72px] lg:mx-[40px] font-Golos flex flex-col mb-[120px]">
+      <h1 className="max-w-[852px] text-[40px] font-normal leading-[48px] text-textBlack">
+        Ваш рост – наш интерес, ведь тогда нам будет к чему стремиться
+      </h1>
+
       <div className="flex flex-wrap gap-4 justify-between pt-[60px]">
         <СhildGrid
           img="\image\aboutGrid\Service.svg"

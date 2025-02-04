@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-textLightGray bg-white;
+  }
+}
+
 .tiles a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;

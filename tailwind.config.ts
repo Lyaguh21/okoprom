@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +10,8 @@ export default {
   theme: {
     extend: {},
     colors: {
+      white: "#FFF",
+
       secondColor: "#F4F5F8",
       buttonHover: "#cdced1",
       buttonActive: "#3a3b3a",
