@@ -64,7 +64,7 @@ export default function Header() {
         </div>
         <div className="md:hidden">
           <NavButton>
-            <img src="/image/menu.svg" alt="" />
+            <img src="/image/header/menu.svg" alt="" />
           </NavButton>
         </div>
       </nav>
