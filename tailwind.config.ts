@@ -22,6 +22,9 @@ export default {
 
       borderWhite: "#E9E9E9",
       borderBlack: "#36383C",
+
+      darkHeader: "#171616",
+      darkBody: "#262626",
     },
     fontFamily: {
       Golos: "Golos Text",

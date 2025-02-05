@@ -3,7 +3,7 @@ import СhildGrid from "./СhildGrid";
 export default function AboutGridSection() {
   return (
     <div className="mx-4 md:mx-[72px] lg:mx-[40px] font-Golos flex flex-col mb-[120px]">
-      <h1 className="max-w-[852px] text-[40px] font-normal leading-[48px] text-textBlack">
+      <h1 className="max-w-[852px] text-[40px] font-normal leading-[48px] text-textBlack dark:text-white">
         Ваш рост – наш интерес, ведь тогда нам будет к чему стремиться
       </h1>
 

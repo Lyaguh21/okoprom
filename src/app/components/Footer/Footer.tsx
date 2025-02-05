@@ -1,16 +1,19 @@
 import BlackButton from "../Buttons/BlackButton";
 import NavButton from "../Buttons/NavButton";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-secondColor font-Golos">
+    <footer className="w-full bg-secondColor dark:bg-darkHeader font-Golos">
       <div className=" px-3 bigPhone:px-10 ">
         <div className="py-5 border-b-[1px] border-borderWhite">
-          <img src="image/Logo.svg" alt="" />
+          <picture>
+            <img src="image/Logo.svg" alt="" className="" />
+          </picture>
         </div>
       </div>
 
-      <div className="px-3 bigPhone:px-10 py-5 bg-secondColor flex flex-wrap md:flex-nowrap">
+      <div className="px-3 bigPhone:px-10 py-5 bg-secondColor dark:bg-darkHeader flex flex-wrap md:flex-nowrap">
         <div className="basis-full md:basis-1/2">
           <h3 className="font-semibold mb-3 text-[24px]">
             Тураевское шоссе дом 17, д.
@@ -27,11 +30,15 @@ export default function Footer() {
           </div>
           <div className="mt-20 flex">
             <div>
-              <NavButton>
-                <img src="image/footer/Instagram.svg" alt="" />
+              <NavButton OnClick={() => {}}>
+                <picture>
+                  <img src="image/footer/Instagram.svg" alt="" />
+                </picture>
               </NavButton>
-              <NavButton>
-                <img src="image/footer/YouTube.svg" alt="" />
+              <NavButton OnClick={() => {}}>
+                <picture>
+                  <img src="image/footer/YouTube.svg" alt="" />
+                </picture>
               </NavButton>
             </div>
             <p className="text-textGray text-[16px] ml-[10px]">
@@ -39,8 +46,8 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="basis-1/2 flex-wrap sm:flex-nowrap  md:justify-center flex lg:justify-evenly md:flex-wrap lg:flex-nowrap tiles">
-          <div className="mt-[30px] md:mt-0 basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:max-h-[300px]  ">
+        <div className="basis-1/2 flex-wrap sm:flex-nowrap  md:justify-center flex lg:justify-evenly md:flex-wrap lg:flex-nowrap tiles ">
+          <div className="mt-[30px] md:mt-0 basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:max-h-[300px] dark:text-white ">
             <h3 className="text-[20px] mb-4 font-medium">Наша продукция</h3>
             <a href="" className="">
               Станки для разделки кабеля
@@ -63,7 +70,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className=" basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:mt-0 lg:max-h-[300px] mt-[30px] ">
+          <div className=" basic-1/2 w-[240px] flex flex-col  text-textBlack justify-between lg:mt-0 lg:max-h-[300px] mt-[30px] dark:text-white  ">
             <h3 className="text-[20px] mb-4 font-medium">Информация</h3>
             <a href="" className="">
               Доставка и оплата
