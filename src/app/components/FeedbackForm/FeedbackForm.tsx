@@ -1,7 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import MainButton from "../Buttons/MainButton";
+import { Text } from "@radix-ui/themes";
 
-export default function FeedbackForm() {
+function FeedbackForm() {
   const [name, setName] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -11,18 +14,18 @@ export default function FeedbackForm() {
       <div className="bg-textBlack rounded-[20px] flex px-[12px] sm:px-11 py-[60px] flex-wrap md:flex-nowrap">
         <div className="md:basis-1/2">
           <div className="max-w-[451px]">
-            <h1 className="text-borderWhite font-normal text-[40px] mb-5">
+            <Text className="text-borderWhite font-normal text-[40px] mb-5">
               Будем рады ответить на все интересующие вопросы
-            </h1>
-            <h3 className="text-textGray font-normal text-[16px]">
+            </Text>
+            <Text size={"1"} color="gray">
               Оставьте заявку и мы вам вскоре позвоним и проконсультируем по
               всем интересующим вопросам
-            </h3>
+            </Text>
           </div>
         </div>
         <div className="md:basis-1/2 md:px-2">
           <form action="">
-            <input
+            {/* <input
               type="text"
               id="name"
               value={name}
@@ -33,7 +36,7 @@ export default function FeedbackForm() {
                 borderBottom:
                   name.trim().length != 0 ? "2px solid green" : undefined,
               }}
-            />
+            /> */}
             <input
               type="tel"
               id="phone"
@@ -70,3 +73,4 @@ export default function FeedbackForm() {
     </div>
   );
 }
+export default FeedbackForm;
