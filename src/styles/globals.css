@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-darkBody bg-white;
+  }
+}
+
 .tiles a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -20,4 +26,35 @@
   padding: 16px 0 16px 0;
   border-bottom: 2px solid white;
   outline: none;
+}
+
+.childrenAbout {
+  height: 187px;
+  border-radius: 16px;
+  background-color: #f4f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.childrenCategory {
+  border: 2px solid black;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 24px 24px 24px;
+}
+.childrenCategory:hover {
+  transition: all 0.4s;
+  border: 2px solid #757575;
+  h3 {
+    color: #757575;
+  }
+}
+.childrenCategory:active {
+  transition: all 0.4s;
+  border: 2px solid black;
+  h3 {
+    color: black;
+  }
 }

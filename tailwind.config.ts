@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,12 +10,21 @@ export default {
   theme: {
     extend: {},
     colors: {
+      white: "#FFF",
+
       secondColor: "#F4F5F8",
       buttonHover: "#cdced1",
       buttonActive: "#3a3b3a",
+
       textGray: "#757575",
+      textLightGray: "#9F9F9F",
       textBlack: "#161616",
+
       borderWhite: "#E9E9E9",
+      borderBlack: "#36383C",
+
+      darkHeader: "#171616",
+      darkBody: "#262626",
     },
     fontFamily: {
       Golos: "Golos Text",
