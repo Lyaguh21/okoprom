@@ -21,7 +21,7 @@ export default function SetThemeButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="fill-current border-[1px] border-borderWhite bg-secondColor mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
+      className="fill-current border-[1px] group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
     >
       {isDark ? (
         <svg
@@ -30,7 +30,7 @@ export default function SetThemeButton() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6"
+          className="size-6 dark:fill-white dark:stroke-white dark:group-hover:stroke-textBlack dark:group-hover:fill-textBlack "
         >
           <path
             strokeLinecap="round"

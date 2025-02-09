@@ -1,9 +1,10 @@
+import LogoSection from "./logoSection";
 export default function AboutUsSection() {
   return (
     <div className="w-full px-4 md:px-[72px] lg:px-[40px] font-Golos">
       <div className="flex flex-wrap xl:flex-nowrap">
-        <div className="basis-full xl:basis-2/3 p-[40px] rounded-2xl bg-secondColor flex flex-col justify-between">
-          <h1 className="text-textBlack text-[40px] font-normal ">
+        <div className="basis-full xl:basis-2/3 p-[40px] rounded-2xl bg-secondColor dark:bg-darkMainButton flex flex-col justify-between">
+          <h1 className="text-textBlack text-[40px] font-normal dark:text-white">
             Почему именно мы?
           </h1>
           <h4 className="text-textGray font-normal text-base max-w-[550px] mt-[40px]">
@@ -24,10 +25,10 @@ export default function AboutUsSection() {
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
             <img src="\image\aboutUsSection\logo-mkm.svg" alt="" />
           </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)] ">
+          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
             <img src="\image\aboutUsSection\ollimp.svg" alt="" />
           </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)] ">
+          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
             <img src="\image\aboutUsSection\VtorTehMix.svg" alt="" />
           </div>
           <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">

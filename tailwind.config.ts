@@ -25,6 +25,7 @@ export default {
 
       darkHeader: "#171616",
       darkBody: "#262626",
+      darkMainButton: "#1f1f1f",
     },
     fontFamily: {
       Golos: "Golos Text",
