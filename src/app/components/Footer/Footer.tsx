@@ -1,6 +1,7 @@
+"use client";
+
 import BlackButton from "../Buttons/BlackButton";
 import NavButton from "../Buttons/NavButton";
-import Image from "next/image";
 
 export default function Footer() {
   return (
