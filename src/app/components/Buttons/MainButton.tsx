@@ -1,6 +1,7 @@
 type LayoutProps = {
   children: React.ReactNode;
-  disabled: boolean;
+  disabled?: boolean;
+  OnClick?: React.MouseEventHandler;
 };
 export default function MainButton({
   children,

@@ -1,10 +1,10 @@
-export type FeedbackFormService = {
+export type FeedbackFormServiceProps = {
   phone: string;
   email: string;
 };
 
 export async function POST(_request: Request) {
-  const body: FeedbackFormService = await _request.json();
+  const body: FeedbackFormServiceProps = await _request.json();
 
   const { phone, email } = body;
 
