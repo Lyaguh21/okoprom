@@ -13,54 +13,54 @@ export default function CategorySection() {
         </div>
 
         <div className="flex flex-wrap mt-[60px] gap-4 justify-between">
-          <div className="childrenCategory ]  w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)] dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)] dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">
                 Станки
                 <br /> для разделки кабеля
               </h3>
-              <img src="\image\categorySection\Cabel.svg" alt="" />
+              <img src="\image\categorySection\Cabel.png" alt="" />
             </a>
           </div>
 
-          <div className="childrenCategory   w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px]  w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">Сепораторы</h3>
-              <img src="\image\categorySection\Seporator.svg" alt="" />
+              <img src="\image\categorySection\Seporator.png" alt="" />
             </a>
           </div>
 
-          <div className="childrenCategory     w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory h-[356px]  xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">
                 Станок для разделки теплообменников
               </h3>
-              <img src="\image\categorySection\Teploobmennik.svg" alt="" />
+              <img src="\image\categorySection\Teploobmennik.png" alt="" />
             </a>
           </div>
 
-          <div className="childrenCategory w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory w-full h-[356px] xl:h-[384px] xl:min-w-[389px] sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">
                 Разделка радиаторов
               </h3>
-              <img src="\image\categorySection\Radiator.svg" alt="" />
+              <img src="\image\categorySection\Radiator.png" alt="" />
             </a>
           </div>
 
-          <div className="childrenCategory   w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">
                 Запасные части
               </h3>
-              <img src="\image\categorySection\Details.svg" alt="" />
+              <img src="\image\categorySection\Details.png" alt="" />
             </a>
           </div>
 
-          <div className="childrenCategory  w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
+          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
             <a href="#" className="flex flex-col justify-between">
               <h3 className="font-medium text-[24px] leading-7">Другое</h3>
-              <img src="\image\categorySection\More.svg" alt="" />
+              <img src="\image\categorySection\More.png" alt="" />
             </a>
           </div>
         </div>
