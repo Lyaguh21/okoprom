@@ -1,3 +1,4 @@
+import ButtonCategory from "./ButtonCategory";
 export default function CategorySection() {
   return (
     <div className="my-[120px] px-4 md:px-[72px] lg:px-[40px] font-Golos">
@@ -13,56 +14,32 @@ export default function CategorySection() {
         </div>
 
         <div className="flex flex-wrap mt-[60px] gap-4 justify-between">
-          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)] dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">
-                Станки
-                <br /> для разделки кабеля
-              </h3>
-              <img src="\image\categorySection\Cabel.png" alt="" />
-            </a>
-          </div>
-
-          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px]  w-full  sm:w-[calc(50%-16px)] md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">Сепораторы</h3>
-              <img src="\image\categorySection\Seporator.png" alt="" />
-            </a>
-          </div>
-
-          <div className="childrenCategory h-[356px]  xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">
-                Станок для разделки теплообменников
-              </h3>
+          <ButtonCategory
+            title={"Станки для разделки кабеля"}
+            photo={<img src="\image\categorySection\Cabel.png" alt="" />}
+          />
+          <ButtonCategory
+            title={"Сепараторы"}
+            photo={<img src="\image\categorySection\Seporator.png" alt="" />}
+          />
+          <ButtonCategory
+            title={"Станок для разделки теплообменников"}
+            photo={
               <img src="\image\categorySection\Teploobmennik.png" alt="" />
-            </a>
-          </div>
-
-          <div className="childrenCategory w-full h-[356px] xl:h-[384px] xl:min-w-[389px] sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">
-                Разделка радиаторов
-              </h3>
-              <img src="\image\categorySection\Radiator.png" alt="" />
-            </a>
-          </div>
-
-          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">
-                Запасные части
-              </h3>
-              <img src="\image\categorySection\Details.png" alt="" />
-            </a>
-          </div>
-
-          <div className="childrenCategory h-[356px] xl:h-[384px] xl:min-w-[389px] w-full  sm:w-[calc(50%-16px)]  md:w-[calc(33.33%-16px)]  dark:bg-white dark:text-textBlack">
-            <a href="#" className="flex flex-col justify-between">
-              <h3 className="font-medium text-[24px] leading-7">Другое</h3>
-              <img src="\image\categorySection\More.png" alt="" />
-            </a>
-          </div>
+            }
+          />
+          <ButtonCategory
+            title={"Разделка радиаторов"}
+            photo={<img src="\image\categorySection\Radiator.png" alt="" />}
+          />
+          <ButtonCategory
+            title={"Запасные части"}
+            photo={<img src="\image\categorySection\Details.png" alt="" />}
+          />
+          <ButtonCategory
+            title={"Другое"}
+            photo={<img src="\image\categorySection\More.png" alt="" />}
+          />
         </div>
       </div>
     </div>
