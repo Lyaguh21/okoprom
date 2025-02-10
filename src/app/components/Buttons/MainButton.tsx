@@ -1,6 +1,6 @@
 type LayoutProps = {
   children: React.ReactNode;
-  disabled: boolean;
+  disabled?: boolean;
 };
 export default function MainButton({ children, disabled }: LayoutProps) {
   return (
