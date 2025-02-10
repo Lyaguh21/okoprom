@@ -1,7 +1,6 @@
 let routeConfig = {
-    root: "/",
-    cms: "/cms",
-  };
-  
-  export default routeConfig;
-  
+  root: "/",
+  cms: "/cms",
+};
+
+export default routeConfig;

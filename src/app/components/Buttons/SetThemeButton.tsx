@@ -1,23 +1,36 @@
 "use client";
-import React from "react";
-import { useTheme } from "next-themes";
+import React, { useState } from "react";
 
 export default function SetThemeButton() {
-  const { theme, setTheme } = useTheme();
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleTheme = () => {
+    const htmlElement = document.querySelector("html");
+
+    if (isDark) {
+      htmlElement.classList.remove("dark");
+      htmlElement.classList.add("light");
+    } else {
+      htmlElement.classList.remove("light");
+      htmlElement.classList.add("dark");
+    }
+
+    setIsDark(!isDark);
+  };
 
   return (
     <button
-      onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
-      className="fill-current border-[1px] border-borderWhite bg-secondColor mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
+      onClick={toggleTheme}
+      className="fill-current border-[1px] group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
     >
-      {theme == "light" ? (
+      {isDark ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-6"
+          className="size-6 dark:fill-white dark:stroke-white dark:group-hover:stroke-textBlack dark:group-hover:fill-textBlack "
         >
           <path
             strokeLinecap="round"
