@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 type ButtonCategory = {
   title: string;
-  photo: string;
+  photo: ReactNode;
 };
 export default function ButtonCategory({ title, photo }: ButtonCategory) {
   return (
