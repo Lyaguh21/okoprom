@@ -6,6 +6,7 @@
 @layer base {
   body {
     @apply dark:bg-darkBody bg-white;
+    @apply transition-colors duration-[450ms];
   }
 }
 

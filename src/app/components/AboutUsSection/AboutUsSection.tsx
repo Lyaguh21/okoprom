@@ -1,4 +1,6 @@
-import LogoSection from "./logoSection";
+import LogoSection from "./LogoSection";
+import VtorTechMix from "../../../../Data";
+
 export default function AboutUsSection() {
   return (
     <div className="w-full px-4 md:px-[72px] lg:px-[40px] font-Golos">
@@ -19,24 +21,24 @@ export default function AboutUsSection() {
           </h4>
         </div>
         <div className=" justify-between mt-4 w-full xl:basis-1/3 xl:min-w-[610px] flex flex-wrap gap-4 xl:pl-4 xl:mt-0 ">
-          <div className="childrenAbout w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\IIF-RF.svg" alt="" />
-          </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\logo-mkm.svg" alt="" />
-          </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\ollimp.svg" alt="" />
-          </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\VtorTehMix.svg" alt="" />
-          </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\UMZ.svg" alt="" />
-          </div>
-          <div className="childrenAbout  w-[calc(50%-16px)] md:w-[calc(33%-16px)]">
-            <img src="\image\aboutUsSection\VtorCherMet.svg" alt="" />
-          </div>
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\IIF.png" alt="" />}
+          />
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\mkm.png" alt="" />}
+          />
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\Olimp.png" alt="" />}
+          />
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\VtorTechMix.png" alt="" />}
+          />
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\YMZ.png" alt="" />}
+          />
+          <LogoSection
+            photo={<img src="\image\aboutUsSection\VtorCherMet.png" alt="" />}
+          />
         </div>
       </div>
     </div>
