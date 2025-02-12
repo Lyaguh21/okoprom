@@ -22,6 +22,7 @@ export default {
 
       borderWhite: "#E9E9E9",
       borderBlack: "#36383C",
+      sliderBg: "#202226",
 
       darkHeader: "#171616",
       darkBody: "#262626",
