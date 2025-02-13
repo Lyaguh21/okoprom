@@ -21,7 +21,7 @@ export default function AboutCompanyFirst() {
           периферии для линий.
         </h4>
       </div>
-      <div className="mx-4 md:mx-[72px] lg:mx-[40px] mb-[120px] pt-[40px] flex flex-wrap gap-4 lg:gap-7 justify-between">
+      <div className="mx-4 md:mx-[72px] lg:mx-[40px] mb-[120px] pt-[40px] flex flex-wrap gap-4 lg:gap-[50px] justify-between">
         <ChildAbout
           title="Клиентов"
           number="1200+"

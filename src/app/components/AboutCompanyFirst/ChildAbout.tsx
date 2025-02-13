@@ -5,7 +5,7 @@ type ChildAbout = {
 };
 export default function ChildAbout({ title, number, subtitle }: ChildAbout) {
   return (
-    <div className="sm:basis-[calc(50%-16px)] lg:basis-[calc(33.33%-28px)] font-Golos">
+    <div className="sm:basis-[calc(50%-16px)] lg:basis-[calc(33.33%-50px)] font-Golos">
       <h4 className="text-textGray text-base mb-[20px] leading-5">{title}</h4>
       <h3 className="text-textBlack dark:text-white text-[40px] leading-[48px] font-medium mb-3">
         {number}
