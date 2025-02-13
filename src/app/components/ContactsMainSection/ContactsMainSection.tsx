@@ -6,8 +6,8 @@ import ContactsMiniSection from "./ContactMiniSection";
 
 export default function ContactsMainSection() {
   return (
-    <div className="font-Golos mx-[40px] pt-[60px] border-t-[1px] border-secondColor dark:border-darkHeader flex justify-between ">
-      <div className="basis-1/2 ">
+    <div className="font-Golos mx-[16px] md:mx-[72px] mx-[40px] pt-[60px] border-t-[1px] border-secondColor dark:border-darkHeader flex-wrap flex lg:flex-nowrap justify-between ">
+      <div className="basis-full lg:basis-1/3 ">
         <h1 className="mb-[40px] text-[40px] leading-[48px] text-textBlack font-medium ">
           Контакты
         </h1>
@@ -44,7 +44,18 @@ export default function ContactsMainSection() {
           </div>
         </ContactsMiniSection>
       </div>
-      <div className="basis-1/2  py-[40px]"></div>
+      <div className="basis-full lg:basis-2/3 py-[40px]">
+        <div className="hidden lg:block">
+          <picture className=" flex items-center justify-end">
+            <img src="\image\bg\mapLG.png" alt="" />
+          </picture>
+        </div>
+        <div className="block lg:hidden">
+          <picture className="flex items-center ">
+            <img src="\image\bg\mapMD.png" alt="" />
+          </picture>
+        </div>
+      </div>
     </div>
   );
 }
