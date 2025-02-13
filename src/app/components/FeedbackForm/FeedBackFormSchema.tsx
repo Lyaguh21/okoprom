@@ -1,6 +1,15 @@
 import { z } from "zod";
 
 export const FeedbackFormSchema = z.object({
+  name: z
+  .string()
+    .min(3, {
+      message: "Длина имени должна быть больше 3",
+    })
+    .nonempty({
+      message: "Обязательное поле",
+    }),
+
   phone: z
     .string()
     .regex(

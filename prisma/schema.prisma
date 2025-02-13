@@ -7,12 +7,40 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Account {
-  id          String    @id @default(cuid())
-  name        String    @unique
-  email       String  
-  phone       String
-  
+model Partner {
+  id    String @id
+  name  String @unique
+  email String
+  phone String
+}
 
-  @@map("accounts")
+model ProductType {
+  id      String    @id
+  name    String
+  Product Product[]
+}
+
+model Attribute {
+  id                String              @id
+  name              String
+  ProductAttributes ProductAttributes[]
+}
+
+model Product {
+  id                String              @id
+  productType       ProductType         @relation(fields: [productTypeId], references: [id])
+  productTypeId     String
+  name              String
+  imageUrl          String
+  price             String
+  ProductAttributes ProductAttributes[]
+}
+
+model ProductAttributes {
+  id          String    @id
+  product     Product   @relation(fields: [productId], references: [id])
+  productId   String
+  attribute   Attribute @relation(fields: [attributeId], references: [id])
+  attributeId String
+  value       String
 }

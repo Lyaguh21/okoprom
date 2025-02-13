@@ -9,6 +9,7 @@ import {
   FormItem,
   FormMessage,
 } from "../ui/Form";
+import { Button } from "../ui/Button";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -26,11 +27,11 @@ function FeedbackForm() {
   async function handleFeedbackForm(
     values: z.infer<typeof FeedbackFormSchema>
   ) {
-    FeedBackFormService
-      .createFeedback({
-        phone: values.phone,
-        email: values.email,
-      })
+    FeedBackFormService.createFeedback({
+      name: values.name,
+      phone: values.phone,
+      email: values.email,
+    })
       .then(() => {
         form.reset();
       })
@@ -56,6 +57,22 @@ function FeedbackForm() {
         <div className="md:basis-1/2 md:px-2">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleFeedbackForm)}>
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <input
+                        className={"FeedbackFormInput mb-[20px]"}
+                        placeholder={"Ваше имя"}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="phone"
@@ -88,7 +105,12 @@ function FeedbackForm() {
                   </FormItem>
                 )}
               />
-              <MainButton>Отправить</MainButton>
+              <Button
+                type="submit"
+                className=" font-Golos font-semibold text-base bg-secondColor dark:bg-darkMainButton dark:hover:text-textBlack dark:text-white px-5  mr-[10px] h-11 rounded-lg text-textBlack transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:bg-buttonActive active:text-secondColor  active:ease-out active:duration-150 disabled:cursor-not-allowed disabled:bg-buttonActive disabled:active:text-textBlack disabled:transition-colors disabled:ease-in-out disabled:duration-500"
+              >
+                Отправить
+              </Button>
             </form>
           </Form>
         </div>

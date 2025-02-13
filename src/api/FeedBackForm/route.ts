@@ -1,4 +1,5 @@
 export type FeedbackFormServiceProps = {
+  name: string;
   phone: string;
   email: string;
 };
@@ -6,7 +7,7 @@ export type FeedbackFormServiceProps = {
 export async function POST(_request: Request) {
   const body: FeedbackFormServiceProps = await _request.json();
 
-  const { phone, email } = body;
+  const { name, phone, email } = body;
 
 //   var mailOptions = {
 //     from: process.env.NMUSER,

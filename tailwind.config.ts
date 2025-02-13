@@ -19,6 +19,7 @@ export default {
       textGray: "#757575",
       textLightGray: "#9F9F9F",
       textBlack: "#161616",
+      textRed: "#ef4444",
 
       borderWhite: "#E9E9E9",
       borderBlack: "#36383C",
