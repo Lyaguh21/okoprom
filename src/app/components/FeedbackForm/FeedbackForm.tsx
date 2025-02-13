@@ -54,60 +54,66 @@ function FeedbackForm() {
             </Text>
           </div>
         </div>
-        <div className="md:basis-1/2 md:px-2">
+        <div className="basis-full md:basis-1/2 md:px-2">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleFeedbackForm)}>
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <input
-                        className={"FeedbackFormInput mb-[20px]"}
-                        placeholder={"Ваше имя"}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <input
-                        className={"FeedbackFormInput mb-[20px]"}
-                        placeholder={"+ 7 (___) __ __"}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <input
-                        className={"FeedbackFormInput mb-[20px]"}
-                        placeholder={"E-mail (необязательно)"}
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+              <div className="h-[86px]">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <input
+                          className={"FeedbackFormInput"}
+                          placeholder={"Ваше имя"}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <div className="h-[86px]">
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <input
+                          className={"FeedbackFormInput"}
+                          placeholder={"+ 7 (___) __ __"}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <div className="h-[86px]">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <input
+                          className={"FeedbackFormInput"}
+                          placeholder={"E-mail (необязательно)"}
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
               <Button
                 type="submit"
-                className=" font-Golos font-semibold text-base bg-secondColor dark:bg-darkMainButton dark:hover:text-textBlack dark:text-white px-5  mr-[10px] h-11 rounded-lg text-textBlack transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:bg-buttonActive active:text-secondColor  active:ease-out active:duration-150 disabled:cursor-not-allowed disabled:bg-buttonActive disabled:active:text-textBlack disabled:transition-colors disabled:ease-in-out disabled:duration-500"
+                className="mt-6 font-Golos font-semibold text-base bg-secondColor dark:bg-darkMainButton dark:hover:text-textBlack dark:text-white px-5  mr-[10px] h-11 rounded-lg text-textBlack transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:bg-buttonActive active:text-secondColor  active:ease-out active:duration-150 disabled:cursor-not-allowed disabled:bg-buttonActive disabled:active:text-textBlack disabled:transition-colors disabled:ease-in-out disabled:duration-500"
               >
                 Отправить
               </Button>
