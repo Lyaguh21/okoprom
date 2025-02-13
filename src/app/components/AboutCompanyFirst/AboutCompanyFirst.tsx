@@ -3,7 +3,7 @@ import ChildAbout from "./ChildAbout";
 export default function AboutCompanyFirst() {
   return (
     <>
-      <div className="mx-4 md:mx-[72px] lg:mx-[40px] pt-[60px] pb-[120px] border-borderWhite font-Golos   border-y-[1px]">
+      <div className="mx-4 md:mx-[72px] lg:mx-[40px] pt-[60px] pb-[120px] border-borderWhite dark:border-darkHeader font-Golos   border-y-[1px]">
         <h2 className="text-textBlack dark:text-white leading-[48px] text-[40px] font-semibold mb-[40px]">
           О нас
         </h2>
