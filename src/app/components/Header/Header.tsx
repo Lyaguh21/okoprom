@@ -7,6 +7,7 @@ import BlackButton from "../Buttons/BlackButton";
 import SetThemeButton from "../Buttons/SetThemeButton";
 import { useRouter } from "next/navigation";
 import { market, menu, okopromLogo, search } from "../../../../Data";
+import Link from "next/link";
 
 export default function Header() {
   const router = useRouter();
@@ -32,18 +33,18 @@ export default function Header() {
 
       <nav className="flex justify-between px-4 py-4 md:flex-wrap md:px-[72px] lg:px-10 lg:py-5">
         <div className="hidden md:block">
-          <MainButton disabled={false} OnClick={() => router.push("/")}>
-            Главная
-          </MainButton>
-          <MainButton disabled={false} OnClick={() => undefined}>
-            Каталог
-          </MainButton>
-          <MainButton disabled={false} OnClick={() => router.push("/about")}>
-            О компании
-          </MainButton>
-          <MainButton disabled={false} OnClick={() => undefined}>
-            Контакты
-          </MainButton>
+          <Link href={"/"}>
+            <MainButton>Главная</MainButton>
+          </Link>
+
+          <MainButton>Каталог</MainButton>
+
+          <Link href={"/about"}>
+            <MainButton>О компании</MainButton>
+          </Link>
+          <Link href={"/contacts"}>
+            <MainButton>Контакты</MainButton>
+          </Link>
         </div>
         <div className="flex  md:justify-start sm:basis-1/3 md:basis-3/4 lg:justify-between lg:basis-2/4 lg:flex-nowrap lg:mt-0 lg:max-w-[420px] md:mt-3">
           <div className="">
