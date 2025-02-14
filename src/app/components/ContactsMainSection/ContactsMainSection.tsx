@@ -10,7 +10,7 @@ export default function ContactsMainSection() {
     <>
       <div className="font-Golos mx-[16px] md:mx-[72px] lg:mx-[40px] pt-[60px] border-t-[1px] border-secondColor dark:border-darkHeader flex-wrap flex lg:flex-nowrap justify-between ">
         <div className="basis-full lg:basis-1/3 ">
-          <h1 className="mb-[40px] text-[40px] leading-[48px] text-textBlack font-medium ">
+          <h1 className="mb-[40px] text-[40px] leading-[48px] text-textBlack font-medium dark:text-white">
             Контакты
           </h1>
           <ContactsMiniSection title="Адрес">
@@ -60,12 +60,12 @@ export default function ContactsMainSection() {
         </div>
       </div>
       <div className="mt-[80px] font-Golos mx-[16px] md:mx-[72px] lg:mx-[40px] ">
-        <h4 className="text-textBlack text-2xl leading-7 font-medium">
+        <h4 className="text-textBlack dark:text-white text-2xl leading-7 font-medium">
           Юридическая информация
         </h4>
         <div className="flex flex-wrap lg:flex-nowrap justify-between mt-[40px] gap-10">
           <div className="basis-1/2">
-            <h4 className="text-xl leading-6 text-textBlack font-medium mb-2">
+            <h4 className="text-xl leading-6 dark:text-white text-textBlack font-medium mb-2">
               Производство
             </h4>
             <ul className="divide-y divide-borderWhite last:border-b-[1px] last:border-borderWhite">
@@ -86,7 +86,7 @@ export default function ContactsMainSection() {
             </ul>
           </div>
           <div className="basis-1/2 ">
-            <h4 className="text-xl leading-6 text-textBlack font-medium mb-2">
+            <h4 className="text-xl leading-6 text-textBlack dark:text-white font-medium mb-2">
               Продажи
             </h4>
             <ul className="divide-y divide-borderWhite last:border-b-[1px] last:border-borderWhite">

@@ -1,3 +1,6 @@
+export const Catalog = {
+  allProduct: "126",
+};
 export const slider = [
   {
     title: `Новый зверь  для всех типов кабелей`,
@@ -189,6 +192,48 @@ export const youtube = (
       </g>
       <defs>
         <clipPath id="clip0_8709_3577">
+          <path fill="#fff" d="M0 0h24v24H0z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+  </picture>
+);
+
+export const table = (
+  <picture className="flex flex-col justify-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      fill="none"
+      viewBox="0 0 18 18"
+    >
+      <path
+        stroke="#fff"
+        strokeWidth="2"
+        d="M1 1h6v6H1zm0 10h6v6H1zM11 1h6v6h-6zm0 10h6v6h-6z"
+      ></path>
+    </svg>
+  </picture>
+);
+
+export const sale = (
+  <picture>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <g clipPath="url(#clip0_8937_2768)">
+        <path
+          fill="#161616"
+          d="M17.5 21a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7m0-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-11-9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7m0-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m12.571-4.485 1.414 1.414L4.93 20.485l-1.414-1.414L19.07 3.515z"
+        ></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_8937_2768">
           <path fill="#fff" d="M0 0h24v24H0z"></path>
         </clipPath>
       </defs>

@@ -36,9 +36,9 @@ export default function Header() {
           <Link href={"/"}>
             <MainButton>Главная</MainButton>
           </Link>
-
-          <MainButton>Каталог</MainButton>
-
+          <Link href={"/catalog"}>
+            <MainButton>Каталог</MainButton>
+          </Link>
           <Link href={"/about"}>
             <MainButton>О компании</MainButton>
           </Link>

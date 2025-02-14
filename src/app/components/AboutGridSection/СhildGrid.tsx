@@ -5,7 +5,7 @@ type ChildGrid = {
 };
 export default function СhildGrid({ img, title, subtitle }: ChildGrid) {
   return (
-    <div className="flex w-full sm:justify-normal sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-16px)] md:mb-[40px] justify-center">
+    <div className="flex w-full sm:justify-normal sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-16px)] mb-[32px] md:mb-[40px] justify-center">
       <img
         src={img}
         alt=""

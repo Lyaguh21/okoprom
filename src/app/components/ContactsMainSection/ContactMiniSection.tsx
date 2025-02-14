@@ -11,7 +11,7 @@ export default function ContactsMiniSection({
   return (
     <div className="mb-[40px]">
       <h4 className="text-base text-textGray leading-5 mb-2">{title}</h4>
-      <div className="text-textBlack text-xl leading-6 max-w-[490px]">
+      <div className="text-textBlack dark:text-white text-xl leading-6 max-w-[490px]">
         {children}
       </div>
     </div>
