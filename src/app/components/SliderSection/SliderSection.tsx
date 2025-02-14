@@ -40,7 +40,7 @@ export default function SliderSection() {
           <h1 className="text-white font-semibold text-[40px] leading-[48px] mb-8 h-[96px]">
             {info.title}
           </h1>
-          <ul className="divide-y divide-borderBlack ">
+          <ul className="divide-y divide-borderBlack">
             <Property left="Диаметр обработки" right={info.diameter} />
             <Property left="Размеры" right={info.size} />
             <Property left="Мощность" right={info.power} />
