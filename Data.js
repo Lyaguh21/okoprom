@@ -209,7 +209,6 @@ export const table = (
       viewBox="0 0 18 18"
     >
       <path
-        stroke="#fff"
         strokeWidth="2"
         d="M1 1h6v6H1zm0 10h6v6H1zM11 1h6v6h-6zm0 10h6v6h-6z"
       ></path>
