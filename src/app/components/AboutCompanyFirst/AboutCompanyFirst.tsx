@@ -1,6 +1,53 @@
 import ChildAbout from "./ChildAbout";
-
+import CountUp from "./CountUp";
 export default function AboutCompanyFirst() {
+  const first = (
+    <span>
+      <CountUp
+        from={0}
+        to={1200}
+        separator=""
+        direction="up"
+        duration={1}
+        className="count-up-text"
+      />
+      +
+    </span>
+  );
+  const second = (
+    <span>
+      <CountUp
+        from={0}
+        to={6}
+        separator=""
+        direction="up"
+        duration={1}
+        className="count-up-text"
+      />
+    </span>
+  );
+  const third = (
+    <span>
+      <CountUp
+        from={0}
+        to={24}
+        separator=""
+        direction="up"
+        duration={1}
+        className="count-up-text"
+      />
+      /
+      <CountUp
+        from={0}
+        to={7}
+        separator=""
+        direction="up"
+        duration={1}
+        className="count-up-text"
+      />
+    </span>
+  );
+
   return (
     <>
       <div className="mx-4 md:mx-[72px] lg:mx-[40px] pt-[60px] pb-[120px] border-borderWhite dark:border-darkHeader font-Golos   border-y-[1px]">
@@ -24,17 +71,17 @@ export default function AboutCompanyFirst() {
       <div className="mx-4 md:mx-[72px] lg:mx-[40px] mb-[120px] pt-[40px] flex flex-wrap gap-4 lg:gap-[50px] justify-between">
         <ChildAbout
           title="Клиентов"
-          number="1200+"
+          number={first}
           subtitle="За время работы в этой области у нас более одной тысячи клиентов в базе в том числе и представленные ниже"
         />
         <ChildAbout
           title="Лет в области"
-          number="6"
+          number={second}
           subtitle="Что дает контакты и прямое общение с предпринимателями, выявление прямых потребностей."
         />
         <ChildAbout
           title="Пробуем новое"
-          number="24/7"
+          number={third}
           subtitle="Всегда ищем новые решения, которые будут полезны нашим клиентам"
         />
       </div>

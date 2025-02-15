@@ -11,20 +11,20 @@ export const slider = [
     price: "209 000  ₽",
   },
   {
-    title: "Тестик 1",
-    photo: <img src="\image\sliderSection\test2.png" />,
-    diameter: "Тестик 1",
-    size: "Тестик 1",
-    power: "Тестик 1",
-    price: "Тестик 1",
+    photo: <img src="\image\Product\SG-006-1.png" />,
+    title: "SG-006-1 Станок для разделки кабеля (Автоматический)",
+    price: "34 990 ₽",
+    size: "90*68*120 см",
+    power: "180 Вт",
+    diameter: "1,5 - 25 мм",
   },
   {
-    title: "Тестик 2",
-    photo: <img src="\image\sliderSection\test3.png" />,
-    diameter: "Тестик 2",
-    size: "Тестик 2",
-    power: "Тестик 2",
-    price: "Тестик 2",
+    photo: <img src="\image\Product\S2-3.png" />,
+    title: "S2-3 Автоматический мини для разделки кабеля",
+    price: "42 000 ₽",
+    size: "90*68*120 см",
+    power: "90 Вт",
+    diameter: "1 - 18 мм",
   },
 ];
 
@@ -35,7 +35,7 @@ export const back = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="size-6 dark:stroke-white"
+    className="size-6 "
   >
     <path
       strokeLinecap="round"
@@ -52,7 +52,7 @@ export const next = (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="size-6 dark:stroke-white "
+    className="size-6"
   >
     <path
       strokeLinecap="round"

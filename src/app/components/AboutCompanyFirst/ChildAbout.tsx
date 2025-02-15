@@ -1,6 +1,6 @@
 type ChildAbout = {
   title: string;
-  number: string;
+  number: React.ReactNode;
   subtitle: string;
 };
 export default function ChildAbout({ title, number, subtitle }: ChildAbout) {

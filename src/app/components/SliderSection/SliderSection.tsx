@@ -45,7 +45,7 @@ export default function SliderSection() {
             <Property left="Размеры" right={info.size} />
             <Property left="Мощность" right={info.power} />
           </ul>
-          <h1 className="mt-[88px] text-white text-[24px] leading-7 mb-[32px]">
+          <h1 className="mt-[88px] text-white text-[24px] font-medium leading-7 mb-[32px]">
             {info.price}
           </h1>
         </div>
