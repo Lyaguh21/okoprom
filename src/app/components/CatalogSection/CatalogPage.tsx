@@ -1,8 +1,9 @@
-import { Catalog } from "../../../../Data";
+import { Catalog, filter } from "../../../../Data";
 import MainButton from "../Buttons/MainButton";
 import Product from "./Catalog/Product";
 import FiltersSection from "./Filter/FiltersSection";
 import { SG0061 } from "../../../../Product";
+import BlackButton from "../Buttons/BlackButton";
 
 export default function about() {
   return (
@@ -16,14 +17,17 @@ export default function about() {
           {Catalog.allProduct} товара
         </h4>
       </div>
-      <div className="flex justify-between gap-6">
-        <div className="basis-[278px] h-[448px]">
+      <div className="flex justify-between gap-6 flex-col lg:flex-row">
+        <div className="lg:hidden">
+          <BlackButton>{filter}</BlackButton>
+        </div>
+        <div className="hidden lg:block basis-[278px] h-[448px] basis-[278px]">
           <FiltersSection />
         </div>
+
         <div className="flex justify-center">
           <div className="basis-[900px] notebook:basis-[1400px] flex flex-col justify-between">
             <div className="flex flex-wrap gap-[15px] justify-between">
-              <Product products={SG0061} />
               <Product products={SG0061} />
               <Product products={SG0061} />
               <Product products={SG0061} />

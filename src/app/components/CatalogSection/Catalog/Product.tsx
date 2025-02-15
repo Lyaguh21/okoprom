@@ -6,7 +6,7 @@ type Product = {
 };
 export default function Product({ products }: Product) {
   return (
-    <div className="bg-secondColor rounded-2xl p-2 font-Golos lg:basis-[calc(50%-16px)]  xl:basis-[calc(33%-16px)] notebook:basis-[calc(25%-16px)]">
+    <div className="bg-secondColor rounded-2xl p-2 font-Golos basis-full sm:basis-[calc(50%-16px)]  xl:basis-[calc(33%-16px)] notebook:basis-[calc(25%-16px)]">
       <div className="bg-white rounded-xl flex justify-center items-center">
         <picture>{products.photo}</picture>
       </div>

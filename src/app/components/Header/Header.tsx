@@ -5,12 +5,10 @@ import MainButton from "../Buttons/MainButton";
 import NavButton from "../Buttons/NavButton";
 import BlackButton from "../Buttons/BlackButton";
 import SetThemeButton from "../Buttons/SetThemeButton";
-import { useRouter } from "next/navigation";
 import { market, menu, okopromLogo, search } from "../../../../Data";
 import Link from "next/link";
 
 export default function Header() {
-  const router = useRouter();
   return (
     <header className=" w-full font-Golos whiteLink ">
       <div className="bg-secondColor dark:bg-darkHeader px-[16px] py-[12px] md:px-[72px] lg:py-3 lg:px-10 flex justify-between ">

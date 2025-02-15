@@ -4,5 +4,5 @@ export const SG0061 = {
   price: "34 990 ₽",
   weight: "13 кг",
   power: "180 Вт",
-  diameter: "от 1,5 до 25мм",
+  diameter: "1,5 - 25 мм",
 };
