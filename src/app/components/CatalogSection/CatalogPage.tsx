@@ -1,5 +1,8 @@
 import { Catalog } from "../../../../Data";
+import MainButton from "../Buttons/MainButton";
+import Product from "./Catalog/Product";
 import FiltersSection from "./Filter/FiltersSection";
+import { SG0061 } from "../../../../Product";
 
 export default function about() {
   return (
@@ -13,11 +16,28 @@ export default function about() {
           {Catalog.allProduct} товара
         </h4>
       </div>
-      <div className="flex justify-between gap-[40px]">
-        <div className="basis-[300px] h-[448px]">
+      <div className="flex justify-between gap-6">
+        <div className="basis-[278px] h-[448px]">
           <FiltersSection />
         </div>
-        <div className="basis-[900px] bg-darkHeader h-[448px]"></div>
+        <div className="flex justify-center">
+          <div className="basis-[900px] notebook:basis-[1400px] flex flex-col justify-between">
+            <div className="flex flex-wrap gap-[15px] justify-between">
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+              <Product products={SG0061} />
+            </div>
+            <div className="flex justify-center py-[40px]">
+              <MainButton>Показать еще</MainButton>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
