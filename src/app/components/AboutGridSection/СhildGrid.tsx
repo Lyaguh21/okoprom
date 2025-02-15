@@ -15,7 +15,7 @@ export default function СhildGrid({ img, title, subtitle }: ChildGrid) {
         <h4 className="text-textBlack font-normal text-xl leading-6 mb-2 dark:text-white">
           {title}
         </h4>
-        <h4 className="max-w-[313px] text-textGray font-normal text-base leading-5 ">
+        <h4 className="max-w-[300px] text-textGray font-normal text-base leading-5 ">
           {subtitle}
         </h4>
       </div>

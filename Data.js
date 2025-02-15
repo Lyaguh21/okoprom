@@ -200,13 +200,14 @@ export const youtube = (
 );
 
 export const table = (
-  <picture className="flex flex-col justify-center">
+  <picture className="flex flex-col justify-center ">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="18"
       height="18"
       fill="none"
       viewBox="0 0 18 18"
+      className="dark:stroke-white"
     >
       <path
         strokeWidth="2"
@@ -224,6 +225,7 @@ export const sale = (
       height="24"
       fill="none"
       viewBox="0 0 24 24"
+      className="dark:stroke-white"
     >
       <g clipPath="url(#clip0_8937_2768)">
         <path
