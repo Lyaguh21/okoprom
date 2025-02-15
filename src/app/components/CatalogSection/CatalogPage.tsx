@@ -2,7 +2,7 @@ import { Catalog, filter } from "../../../../Data";
 import MainButton from "../Buttons/MainButton";
 import Product from "./Catalog/Product";
 import FiltersSection from "./Filter/FiltersSection";
-import { SG0061 } from "../../../../Product";
+import { S23, SG0061 } from "../../../../Product";
 import BlackButton from "../Buttons/BlackButton";
 
 export default function about() {
@@ -29,10 +29,10 @@ export default function about() {
           <div className="basis-[900px] notebook:basis-[1400px] flex flex-col justify-between">
             <div className="flex flex-wrap gap-[15px] justify-between">
               <Product products={SG0061} />
+              <Product products={S23} />
               <Product products={SG0061} />
-              <Product products={SG0061} />
-              <Product products={SG0061} />
-              <Product products={SG0061} />
+              <Product products={S23} />
+              <Product products={S23} />
               <Product products={SG0061} />
               <Product products={SG0061} />
               <Product products={SG0061} />

@@ -34,7 +34,7 @@ export default function SliderSection() {
     updateInfo(count - 1);
   }
   return (
-    <div className="mx-4 md:mx-[72px] lg:mx-[40px] bg-sliderBg font-Golos rounded-2xl p-4">
+    <div className="mx-4 md:mx-[72px] lg:mx-[40px] bg-darkMainButton font-Golos rounded-2xl p-4">
       <div className="flex-col lg:flex-row flex justify-between">
         <div className="md:basis-1/2 m-[24px] mb-0 border-b-[1px] border-borderBlack">
           <h1 className="text-white font-semibold text-[40px] leading-[48px] mb-8 h-[96px]">
@@ -49,7 +49,7 @@ export default function SliderSection() {
             {info.price}
           </h1>
         </div>
-        <div className="order-first lg:order-last md:basis-1/2 bg-white dark:bg-darkMainButton rounded-2xl flex justify-center items-center p-[24px]">
+        <div className="order-first lg:order-last md:basis-1/2 bg-white dark:bg-textBlack rounded-2xl flex justify-center items-center p-[24px]">
           <picture>{info.photo}</picture>
         </div>
       </div>
