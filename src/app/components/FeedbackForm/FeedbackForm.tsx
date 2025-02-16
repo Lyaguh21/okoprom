@@ -65,7 +65,9 @@ function FeedbackForm() {
                     <FormItem>
                       <FormControl>
                         <input
-                          className={"FeedbackFormInput"}
+                          className={
+                            "FeedbackFormInput h-[58px] hover:pt-0 focus:pt-4 hover:placeholder:text-sm :transition-all ease-in-out duration-300"
+                          }
                           placeholder={"Ваше имя"}
                           {...field}
                         />
@@ -83,7 +85,9 @@ function FeedbackForm() {
                     <FormItem>
                       <FormControl>
                         <input
-                          className={"FeedbackFormInput"}
+                          className={
+                            "FeedbackFormInput h-[58px] hover:pt-0 focus:pt-4 hover:placeholder:text-sm :transition-all ease-in-out duration-300"
+                          }
                           placeholder={"+ 7 (___) __ __"}
                           {...field}
                         />
@@ -101,7 +105,9 @@ function FeedbackForm() {
                     <FormItem>
                       <FormControl>
                         <input
-                          className={"FeedbackFormInput"}
+                          className={
+                            "FeedbackFormInput h-[58px] hover:pt-0 focus:pt-4 hover:placeholder:text-sm :transition-all ease-in-out duration-300"
+                          }
                           placeholder={"E-mail (необязательно)"}
                           {...field}
                         />
