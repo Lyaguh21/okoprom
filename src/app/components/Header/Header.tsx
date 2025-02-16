@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import MainButton from "../Buttons/MainButton";
 import NavButton from "../Buttons/NavButton";
 import BlackButton from "../Buttons/BlackButton";
 import SetThemeButton from "../Buttons/SetThemeButton";
@@ -10,7 +9,7 @@ import Link from "next/link";
 import SetPageButton from "../Buttons/SetPageButton";
 
 export default function Header() {
-  const [page, setPage] = useState("main");
+  const [page, setPage] = useState(`${window.location.href}`);
   return (
     <header className=" w-full font-Golos whiteLink ">
       <div className="bg-secondColor dark:bg-darkHeader px-[16px] py-[12px] md:px-[72px] lg:py-3 lg:px-10 flex justify-between ">
@@ -35,32 +34,32 @@ export default function Header() {
         <div className="hidden md:block">
           <Link href={"/"}>
             <SetPageButton
-              isActive={page == "main" ? true : false}
-              OnClick={() => setPage("main")}
+              isActive={page == "http://localhost:3000/" ? true : false}
+              OnClick={() => setPage("http://localhost:3000/")}
             >
               Главная
             </SetPageButton>
           </Link>
           <Link href={"/catalog"}>
             <SetPageButton
-              isActive={page == "catalog" ? true : false}
-              OnClick={() => setPage("catalog")}
+              isActive={page == "http://localhost:3000/catalog" ? true : false}
+              OnClick={() => setPage("http://localhost:3000/catalog")}
             >
               Каталог
             </SetPageButton>
           </Link>
           <Link href={"/about"}>
             <SetPageButton
-              isActive={page == "about" ? true : false}
-              OnClick={() => setPage("about")}
+              isActive={page == "http://localhost:3000/about" ? true : false}
+              OnClick={() => setPage("http://localhost:3000/about")}
             >
               О компании
             </SetPageButton>
           </Link>
           <Link href={"/contacts"}>
             <SetPageButton
-              isActive={page == "contacts" ? true : false}
-              OnClick={() => setPage("contacts")}
+              isActive={page == "http://localhost:3000/contacts" ? true : false}
+              OnClick={() => setPage("http://localhost:3000/contacts")}
             >
               Контакты
             </SetPageButton>
