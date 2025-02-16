@@ -22,10 +22,8 @@ export default function Header() {
             <p>+7 (800) 707-31-01</p>
           </div>
           <div className="hidden w-[180px] md:block md:flex md:flex-wrap  lg:w-full lg:justify-evenly max-w-[360px]">
-            <a href="" className=" ">
-              Доставка и оплата
-            </a>
-            <a href="">Гарантия</a>
+            <Link href={"/deliveryPayment"}>Доставка и оплата</Link>
+            <Link href={"/garanted"}>Гарантия</Link>
           </div>
         </div>
       </div>
