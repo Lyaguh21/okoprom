@@ -22,8 +22,18 @@ export default function Header() {
             <p>+7 (800) 707-31-01</p>
           </div>
           <div className="hidden w-[180px] md:block md:flex md:flex-wrap  lg:w-full lg:justify-evenly max-w-[360px]">
-            <Link href={"/deliveryPayment"}>Доставка и оплата</Link>
-            <Link href={"/garanted"}>Гарантия</Link>
+            <Link
+              href={"/deliveryPayment"}
+              onClick={() => setPage("http://localhost:3000/deliveryPayment")}
+            >
+              Доставка и оплата
+            </Link>
+            <Link
+              href={"/garanted"}
+              onClick={() => setPage("http://localhost:3000/garanted")}
+            >
+              Гарантия
+            </Link>
           </div>
         </div>
       </div>

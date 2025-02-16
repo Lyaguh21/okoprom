@@ -6,7 +6,7 @@ import { LiquidChrome } from "../components/Delivery/LiquidChrome";
 
 export default function deliveryPayment() {
   return (
-    <div className="w-full h-[992px] relative border-y-2  border-textBlack font-Golos">
+    <div className="w-full h-[1500px] bigPhone:h-[1200px] sm:h-[992px] relative border-y-2  border-textBlack font-Golos">
       <LiquidChrome
         baseColor={[0.1, 0.1, 0.1]}
         speed={0.2}
@@ -14,7 +14,7 @@ export default function deliveryPayment() {
         interactive={false}
       />
 
-      <div className="bg-white bg-opacity-25 border-[1px] border-[#ffffff25] shadow backdrop-blur-[15px] drop-shadow-lg rounded-2xl absolute z-10 p-4 my-[48px] ml-[40px]">
+      <div className="bg-white bg-opacity-25 border-[1px] border-[#ffffff25] shadow backdrop-blur-[15px] drop-shadow-lg rounded-2xl absolute z-10 p-4 my-[48px] mx-[16px] md:mx-[72px]  lg:ml-[40px]">
         <div className="flex">
           <h4 className="font-medium text-[40px] leading-[48px] mx-auto">
             Доставка и оплата

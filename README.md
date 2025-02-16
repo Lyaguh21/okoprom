@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OKOPROM
 
-## Getting Started
+#
 
-First, run the development server:
+> Okoprom — компания по продаже и аренде различных станков.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### В изначальный [макет](https://www.figma.com/design/HAORuONrRGGc61zJd6jK3C/Окопром?t=wx0DACMwOQBmCZ8e-0) было внесено множество правок. На сайте реализован SSR, адаптивный дизайн, темная тема, отправка форм и их получение в БД, подгрузка информации о товарах из БД и другое.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# Основные Технологии
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Frontend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- React + Next.js
+- TypeScript
+- Tailwind
 
-## Deploy on Vercel
+### Backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- PostgreSQL
+- Zod
+- Prisma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Другие
+
+- Framer motion
+- Radix
+- CVA
+
+#
+
+---
+
+# Разработчики
+
+#
+
+### [![d](https://avatars.githubusercontent.com/u/91676348?v=4&size=64)](https://github.com/Lyaguh21) — Lyaguh (Frontend developer)
+
+### [![d](https://avatars.githubusercontent.com/u/192585257?v=4&size=64)](https://github.com/Rrailee) — Rrailee (Backend developer)
