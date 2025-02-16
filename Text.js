@@ -1,10 +1,8 @@
-import { title } from "process";
-
 export const DeliveryText = [
   {
     title: "Тестирование товара",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         На странице с нашими контактами указан адрес склада. Перед покупкой вы
         можете испытать каждый станок на складе, взяв с собой образцы кабеля,
         которые вы бы хотели разделывать.
@@ -14,7 +12,7 @@ export const DeliveryText = [
   {
     title: "Доставка",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         Доступны следующие способы доставки: <br /> <br />– Транспортной
         компанией По всей России (оплата при получении)
         <br />– Почтовыми отправлениями (до 10кг) По всей России (оплата
@@ -26,7 +24,7 @@ export const DeliveryText = [
   {
     title: "Оплата",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         Оплата возможна следующими способами:
         <br />
         <br />– Наложенным платежом, т.е. вы оплачиваете при получении
@@ -47,7 +45,7 @@ export const GatantedText = [
     title:
       "Условия и срок , при которых осуществляется гарантийное обслуживания товара",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack ">
         При покупке товара с нашего сайта предоставляется гарантия сроком, как
         правило, до 1 года (со дня приобретения товара). Основанием для
         предоставления гарантийного обслуживания служит гарантийный талон или
@@ -62,7 +60,7 @@ export const GatantedText = [
   {
     title: "Гарантийный ремонт не предоставляется в следующих случаях:",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         – в товаре есть механические, термические или электрические поломки
         (сюда относятся и скрытые); <br />– когда в товаре имеются какие <br />
         –либо повреждения по причине неаккуратного обращения пользователя;{" "}
@@ -82,7 +80,7 @@ export const GatantedText = [
   {
     title: "Обмен товара",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         При обнаружении недостатков заводского характера, обмен товара возможен
         на протяжении четырнадцати дней (без учета дня приобретения товара).
         Продавец обязан осуществить замену товара в течение семи дней с момента
@@ -93,7 +91,7 @@ export const GatantedText = [
   {
     title: "Обмен продукции возможен в следующих случаях:",
     subtitle: (
-      <h4 className="text-base text-textBlack dark:text-white">
+      <h4 className="text-base text-textBlack  ">
         – товар не использовался; <br />– товар имеет надлежащий товарный вид;
         <br /> – не повреждены его первоначальные качества;
         <br /> – на своих местах находятся фабричные ярлыки, а также

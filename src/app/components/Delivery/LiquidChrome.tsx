@@ -190,7 +190,13 @@ export const LiquidChrome: React.FC<LiquidChromeProps> = ({
     };
   }, [baseColor, speed, amplitude, frequencyX, frequencyY, interactive]);
 
-  return <div ref={containerRef} className="w-full h-full" {...props} />;
+  return (
+    <div
+      ref={containerRef}
+      className="w-full h-full absolute -z-20"
+      {...props}
+    />
+  );
 };
 
 export default LiquidChrome;
