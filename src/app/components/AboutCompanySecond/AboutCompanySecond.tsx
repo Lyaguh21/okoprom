@@ -4,12 +4,12 @@ export default function AboutCompanySecond() {
       <h1 className="text-textBlack text-[40px] font-medium leading-[48px] max-w-[795px] mb-[40px] xl:mb-[60px] dark:text-white">
         Ваш рост – наш интерес, ведь тогда нам будет к чему стремиться
       </h1>
-      <div className="flex justify-between gap-4">
-        <picture className="hidden lg:block">
+      <div className="flex gap-20 basis-1/2">
+        <picture className="hidden lg:block basis-1/2">
           <img
             src="\image\bg\lines.png"
             alt=""
-            className="rounded-2xl h-[564px] w-[491px]"
+            className="rounded-2xl h-[564px] w-full "
           />
         </picture>
         <div className="flex flex-col justify-between xl:mr-[151px]  my-[24px] lg:basis-[500px]">

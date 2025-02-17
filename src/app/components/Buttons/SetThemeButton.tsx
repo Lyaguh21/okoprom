@@ -21,7 +21,7 @@ export default function SetThemeButton() {
   return (
     <button
       onClick={toggleTheme}
-      className="fill-current border-[1px] group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
+      className="fill-current border-[1px] group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton  rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
     >
       {isDark ? (
         <svg
