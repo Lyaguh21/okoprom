@@ -35,7 +35,7 @@ export default function Footer() {
             <BlackButton>Telegram</BlackButton>
           </div>
           <div className="mt-20 flex">
-            <div>
+            <div className="flex justify-between w-[100px]">
               <NavButton OnClick={() => {}}>{instagram}</NavButton>
               <NavButton OnClick={() => {}}>{youtube}</NavButton>
             </div>
@@ -94,7 +94,7 @@ export default function Footer() {
 
       <div className="px-3 bigPhone:px-10 text-textGray whiteLink">
         <div className="py-5 border-t-[1px] border-borderWhite flex justify-between">
-          <h3>Интернет магазин "Окопром" © 2025 Все права защищены</h3>
+          <h3>Интернет магазин Окопром © 2025 Все права защищены</h3>
           <a href="#">Политика конфиденциальности</a>
         </div>
       </div>

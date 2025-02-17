@@ -55,7 +55,7 @@ export default function SliderSection() {
       </div>
       <div className="flex justify-between mb-[24px] mx-[24px] mt-[40px]">
         <MainButton>Подробнее</MainButton>
-        <div>
+        <div className="flex justify-between w-[100px]">
           <NavButton OnClick={() => handleMinus()}>{back}</NavButton>
           <NavButton OnClick={() => handlePlus()}>{next}</NavButton>
         </div>

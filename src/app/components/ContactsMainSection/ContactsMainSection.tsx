@@ -40,7 +40,7 @@ export default function ContactsMainSection() {
             </div>
           </ContactsMiniSection>
           <ContactsMiniSection title="Мы в социальных сетях">
-            <div>
+            <div className="flex justify-between w-[100px]">
               <NavButton OnClick={() => undefined}>{instagram}</NavButton>
               <NavButton OnClick={() => undefined}>{youtube}</NavButton>
             </div>
