@@ -1,5 +1,6 @@
 "use client";
 
+import { Bounce, ToastContainer, toast } from "react-toastify";
 import React, { useState } from "react";
 import NavButton from "../Buttons/NavButton";
 import BlackButton from "../Buttons/BlackButton";
@@ -11,6 +12,19 @@ import SetPageButton from "../Buttons/SetPageButton";
 export default function Header() {
   const [page, setPage] = useState(`${window.location.href}`);
   const [visible, setVisible] = useState("none");
+
+  const notify = () =>
+    toast.error("Ничего не найдено", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
   function handleClick() {
     setVisible(visible == "none" ? "flex" : "none");
@@ -110,7 +124,10 @@ export default function Header() {
                 placeholder="Поиск"
               />
             </div>
-            <button className="fill-current border-[1px] rounded-l-none group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton  mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor ">
+            <button
+              onClick={notify}
+              className="fill-current border-[1px] rounded-l-none group border-borderWhite bg-secondColor dark:bg-darkMainButton dark:border-darkMainButton  mr-[10px] rounded-lg text-textBlack h-11 w-11 p-[10px] transition-all hover:bg-buttonHover hover:ease-in-out hover:duration-500 active:duration-150 active:bg-secondColor "
+            >
               {search}
             </button>
           </div>

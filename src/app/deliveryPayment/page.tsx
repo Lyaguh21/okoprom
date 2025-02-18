@@ -3,6 +3,7 @@
 import Delivery from "../components/Delivery/Delivery";
 import { DeliveryText } from "../../../Text";
 import { LiquidChrome } from "../components/Delivery/LiquidChrome";
+import { Bounce, ToastContainer } from "react-toastify";
 
 export default function deliveryPayment() {
   return (
@@ -14,7 +15,7 @@ export default function deliveryPayment() {
         interactive={false}
       />
 
-      <div className="bg-white bg-opacity-25 border-[1px] border-[#ffffff25] shadow backdrop-blur-[15px] drop-shadow-lg rounded-2xl absolute z-10 p-4 my-[48px] mx-[16px] md:mx-[72px]  lg:ml-[40px]">
+      <div className="bg-white bg-opacity-35 border-[1px] border-[#ffffff25] shadow backdrop-blur-[15px] drop-shadow-lg rounded-2xl absolute z-10 p-4 my-[48px] mx-[16px] md:mx-[72px]  lg:ml-[40px]">
         <div className="flex">
           <h4 className="font-medium text-[40px] leading-[48px] mx-auto">
             Доставка и оплата
@@ -34,6 +35,19 @@ export default function deliveryPayment() {
           subtitle={DeliveryText[2].subtitle}
         />
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 }

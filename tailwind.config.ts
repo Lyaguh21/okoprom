@@ -11,6 +11,7 @@ export default {
     extend: {},
     colors: {
       white: "#FFF",
+      test: "#c4c4c4",
 
       secondColor: "#F4F5F8",
       buttonHover: "#cdced1",
