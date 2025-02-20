@@ -1,12 +1,11 @@
 "use client";
 
-import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
-import CategorySection from "./components/CategorySection/CategorySection";
-import AboutGridSection from "./components/AboutGridSection/AboutGridSection";
-import SliderSection from "./components/SliderSection/SliderSection";
 import { Bounce, ToastContainer } from "react-toastify";
+import AboutCompanyFirst from "../../components/AboutCompanyFirst/AboutCompanyFirst";
+import AboutCompanySecond from "../../components/AboutCompanySecond/AboutCompanySecond";
+import AboutUsSection from "../../components/AboutUsSection/AboutUsSection";
 
-function App() {
+export default function about() {
   return (
     <>
       <ToastContainer
@@ -22,12 +21,9 @@ function App() {
         theme="light"
         transition={Bounce}
       />
-      <SliderSection />
-      <CategorySection />
-      <AboutGridSection />
+      <AboutCompanyFirst />
       <AboutUsSection />
+      <AboutCompanySecond />
     </>
   );
 }
-
-export default App;

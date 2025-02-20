@@ -1,8 +1,7 @@
 "use client";
 
 import { Bounce, ToastContainer } from "react-toastify";
-import CatalogInfoSection from "../components/CatalogInfoSection/CatalogInfoSection";
-import CatalogPage from "../components/CatalogSection/CatalogPage";
+import ContactsMainSection from "../../components/ContactsMainSection/ContactsMainSection";
 
 export default function about() {
   return (
@@ -20,8 +19,7 @@ export default function about() {
         theme="light"
         transition={Bounce}
       />
-      <CatalogInfoSection />
-      <CatalogPage />
+      <ContactsMainSection />
     </>
   );
 }

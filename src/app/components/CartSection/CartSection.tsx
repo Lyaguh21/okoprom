@@ -8,10 +8,10 @@ export default function CartSection() {
   const [delivery, setDelivery] = useState("none");
   const [pay, setPay] = useState("none");
   return (
-    <div className="mx-4 md:mx-[72px] lg:mx-[40px] font-Golos flex flex-col ">
+    <div className="mx-4 md:mx-[72px] lg:mx-[40px] font-Golos flex flex-col dark:text-white">
       <div className="pt-[60px] pb-[40px] flex-col border-y-[1px] border-borderWhite">
         <div className="flex justify-between mb-[60px]">
-          <h4 className="text-textBlack text-[40px] leading-[44px] font-medium">
+          <h4 className="text-textBlack  text-[40px] leading-[44px] font-medium dark:text-white">
             Оформление заказа
           </h4>
           <MainButton>
@@ -21,21 +21,23 @@ export default function CartSection() {
             </div>{" "}
           </MainButton>
         </div>
-        <h4 className="text-textBlack text-[24px] leading-[22px]">Мой заказ</h4>
+        <h4 className="text-textBlack text-[24px] leading-[22px] dark:text-white">
+          Мой заказ
+        </h4>
       </div>
       <div className="flex mb-[120px] justify-between py-[24px]">
-        <h4 className="text-textBlack text-[20px] leading-6 font-medium">
+        <h4 className="text-textBlack text-[20px] leading-6 font-medium dark:text-white">
           К оплате:
         </h4>
-        <h4 className="text-textBlack text-[20px] leading-6 font-medium">
+        <h4 className="text-textBlack text-[20px] leading-6 font-medium dark:text-white">
           0 ₽
         </h4>
       </div>
       <div className="flex flex-col justify-between mb-[60px]">
-        <h4 className="text-textBlack text-[20px] leading-6 font-medium mb-[40px]">
+        <h4 className="text-textBlack text-[20px] leading-6 font-medium mb-[40px] dark:text-white">
           Доставка:
         </h4>
-        <div className="flex justify-between w-full gap-4">
+        <div className="flex justify-between flex-wrap lg:flex-nowrap w-full gap-4">
           <SelectDelivery
             isActive={delivery == "sdek" ? true : false}
             OnClick={() => setDelivery("sdek")}
@@ -80,10 +82,10 @@ export default function CartSection() {
         </div>
       </div>
       <div className="flex flex-col justify-between">
-        <h4 className="text-textBlack text-[20px] leading-6 font-medium mb-[40px]">
+        <h4 className="text-textBlack text-[20px] leading-6 font-medium mb-[40px] dark:text-white">
           Оплата:
         </h4>
-        <div className="flex justify-between w-full gap-4">
+        <div className="flex justify-between w-full gap-4 flex-wrap lg:flex-nowrap">
           <SelectPay
             isActive={pay == "online" ? true : false}
             OnClick={() => setPay("online")}

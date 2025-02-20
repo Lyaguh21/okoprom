@@ -1,8 +1,10 @@
 "use client";
-import { Bounce, ToastContainer } from "react-toastify";
-import CartSection from "../components/CartSection/CartSection";
 
-export default function cart() {
+import { Bounce, ToastContainer } from "react-toastify";
+import CatalogInfoSection from "../../components/CatalogInfoSection/CatalogInfoSection";
+import CatalogPage from "../../components/CatalogSection/CatalogPage";
+
+export default function about() {
   return (
     <>
       <ToastContainer
@@ -18,8 +20,8 @@ export default function cart() {
         theme="light"
         transition={Bounce}
       />
-
-      <CartSection />
+      <CatalogInfoSection />
+      <CatalogPage />
     </>
   );
 }

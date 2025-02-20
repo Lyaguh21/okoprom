@@ -1,9 +1,9 @@
 "use client";
-
 import { Bounce, ToastContainer } from "react-toastify";
-import ContactsMainSection from "../components/ContactsMainSection/ContactsMainSection";
+import CartSection from "../../components/CartSection/CartSection";
+import ContactForm from "@/app/components/ContactForm/ContactForm";
 
-export default function about() {
+export default function cart() {
   return (
     <>
       <ToastContainer
@@ -19,7 +19,9 @@ export default function about() {
         theme="light"
         transition={Bounce}
       />
-      <ContactsMainSection />
+
+      <CartSection />
+      <ContactForm />
     </>
   );
 }
