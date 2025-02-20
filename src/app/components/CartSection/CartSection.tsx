@@ -39,25 +39,42 @@ export default function CartSection() {
           <SelectDelivery
             isActive={delivery == "sdek" ? true : false}
             OnClick={() => setDelivery("sdek")}
-            photo={<img src="\image\Cart\PEK.png" />}
+            photo={
+              <img src="\image\Cart\PEK.png" className="h-[120px] w-[160px]" />
+            }
             text="ПЭК или СДЭК"
           />
           <SelectDelivery
             isActive={delivery == "deliveryMSK" ? true : false}
             OnClick={() => setDelivery("deliveryMSK")}
-            photo={<img src="\image\Cart\DeliveryMSK.png" />}
+            photo={
+              <img
+                src="\image\Cart\DeliveryMSK.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="Доставка по Москве и МО"
           />
           <SelectDelivery
             isActive={delivery == "more" ? true : false}
             OnClick={() => setDelivery("more")}
-            photo={<img src="\image\Cart\MoreTK.png" />}
+            photo={
+              <img
+                src="\image\Cart\MoreTK.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="Другие ТК"
           />
           <SelectDelivery
             isActive={delivery == "samovivoz" ? true : false}
             OnClick={() => setDelivery("samovivoz")}
-            photo={<img src="\image\Cart\Samovivoz.png" />}
+            photo={
+              <img
+                src="\image\Cart\Samovivoz.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="Самовывоз"
           />
         </div>
@@ -68,21 +85,36 @@ export default function CartSection() {
         </h4>
         <div className="flex justify-between w-full gap-4">
           <SelectPay
-            isActive={delivery == "online" ? true : false}
-            OnClick={() => setDelivery("online")}
-            photo={<img src="\image\Cart\online.png" />}
+            isActive={pay == "online" ? true : false}
+            OnClick={() => setPay("online")}
+            photo={
+              <img
+                src="\image\Cart\online.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="Онлайн"
           />
           <SelectPay
-            isActive={delivery == "perevod" ? true : false}
-            OnClick={() => setDelivery("perevod")}
-            photo={<img src="\image\Cart\perevod.png" />}
+            isActive={pay == "perevod" ? true : false}
+            OnClick={() => setPay("perevod")}
+            photo={
+              <img
+                src="\image\Cart\perevod.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="Банковский перевод (Юр. лица)"
           />
           <SelectPay
-            isActive={delivery == "priPoluchenii" ? true : false}
-            OnClick={() => setDelivery("priPoluchenii")}
-            photo={<img src="\image\Cart\priPoluchenii.png" />}
+            isActive={pay == "priPoluchenii" ? true : false}
+            OnClick={() => setPay("priPoluchenii")}
+            photo={
+              <img
+                src="\image\Cart\priPoluchenii.png"
+                className="h-[120px] w-[160px]"
+              />
+            }
             text="При получении"
           />
         </div>

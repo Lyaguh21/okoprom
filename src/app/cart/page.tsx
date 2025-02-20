@@ -1,7 +1,8 @@
 "use client";
 import { Bounce, ToastContainer } from "react-toastify";
 import CartSection from "../components/CartSection/CartSection";
-export default function about() {
+
+export default function cart() {
   return (
     <>
       <ToastContainer
