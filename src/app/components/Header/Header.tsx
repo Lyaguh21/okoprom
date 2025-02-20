@@ -100,7 +100,9 @@ export default function Header() {
           <div className="flex justify-between w-[150px] ">
             <SetThemeButton />
             <NavButton OnClick={() => handleClick()}>{search}</NavButton>
-            <NavButton OnClick={() => {}}>{market}</NavButton>
+            <Link href={"/cart"}>
+              <NavButton OnClick={() => {}}>{market}</NavButton>
+            </Link>
           </div>
           <div className="hidden md:block pl-3 mr-0 ">
             <BlackButton>Запросить консультацию</BlackButton>
