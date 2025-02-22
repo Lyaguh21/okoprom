@@ -35,7 +35,7 @@ export default function Header() {
   }
   function closeModal() {
     toggle();
-    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+    document.getElementsByTagName("body")[0].style.overflow = "";
   }
   function handleClick() {
     setVisible(visible == "none" ? "flex" : "none");

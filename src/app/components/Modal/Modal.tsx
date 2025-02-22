@@ -19,7 +19,7 @@ export default function Modal(props: ModalType) {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="block bg-white w-full  p-6 rounded-lg"
+            className="block bg-white dark:bg-darkBody w-full  p-6 rounded-lg"
           >
             <div className="flex justify-end" onClick={props.toggle}>
               {close}
