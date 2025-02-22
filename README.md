@@ -23,6 +23,7 @@
 - Framer motion
 - Radix
 - CVA
+- React-toastify
 
 
 
