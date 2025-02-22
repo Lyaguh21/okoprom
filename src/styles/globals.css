@@ -28,6 +28,15 @@
   border-bottom: 2px solid white;
   outline: none;
 }
+.ModalFormInput {
+  width: 100%;
+  background: none;
+  color: #161616;
+  font-size: 16px;
+  padding: 16px 0 16px 0;
+  border-bottom: 2px solid #161616;
+  outline: none;
+}
 
 .childrenAbout {
   height: 187px;

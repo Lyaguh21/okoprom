@@ -1,6 +1,6 @@
 "use client";
 
-import { Bounce, ToastContainer, toast } from "react-toastify";
+import { Bounce, toast } from "react-toastify";
 import React, { useState } from "react";
 import NavButton from "../Buttons/NavButton";
 import BlackButton from "../Buttons/BlackButton";
@@ -8,10 +8,13 @@ import SetThemeButton from "../Buttons/SetThemeButton";
 import { close, market, menu, okopromLogo, search } from "../../../../Data";
 import Link from "next/link";
 import SetPageButton from "../Buttons/SetPageButton";
+import useModal from "@/app/hooks/useModal";
+import ModalForm from "../Modal/ModalForm";
 
 export default function Header() {
   const [page, setPage] = useState(`${window.location.href}`);
   const [visible, setVisible] = useState("none");
+  const { isOpen, toggle } = useModal();
 
   const notify = () =>
     toast.error("Ничего не найдено", {
@@ -26,6 +29,14 @@ export default function Header() {
       transition: Bounce,
     });
 
+  function openModal() {
+    toggle();
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+  }
+  function closeModal() {
+    toggle();
+    document.getElementsByTagName("body")[0].style.overflow = "scroll";
+  }
   function handleClick() {
     setVisible(visible == "none" ? "flex" : "none");
     console.log(visible);
@@ -105,7 +116,9 @@ export default function Header() {
             </Link>
           </div>
           <div className="hidden md:block pl-3 mr-0 ">
-            <BlackButton>Запросить консультацию</BlackButton>
+            <BlackButton OnClick={() => openModal()}>
+              Запросить консультацию
+            </BlackButton>
           </div>
         </div>
         <div className="md:hidden ">
@@ -136,6 +149,7 @@ export default function Header() {
           <NavButton OnClick={() => handleClick()}>{close}</NavButton>
         </div>
       </nav>
+      <ModalForm isOpen={isOpen} toggle={() => closeModal()} />
     </header>
   );
 }

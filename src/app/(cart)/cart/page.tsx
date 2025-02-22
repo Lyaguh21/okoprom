@@ -19,7 +19,6 @@ export default function cart() {
         theme="light"
         transition={Bounce}
       />
-
       <CartSection />
       <ContactForm />
     </>
